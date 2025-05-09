@@ -1,0 +1,84 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Introduction" />
+
+# Button Component Library
+
+Welcome to our button component library! This library provides a comprehensive set of button components to use in your applications, built with Chakra UI.
+
+## Features
+
+- Multiple button variants: Primary, Secondary, Tertiary, and Tertiary-Hover
+- Four color themes: Orange, Teal, Charcoal Grey, and White
+- Button sizes: Small, Medium, and Large
+- Icon support: Left, Right, and Chevron icon buttons
+- Fully accessible components
+- Consistent design system
+
+## Button Types
+
+### Standard Buttons
+
+Standard buttons are the most common type of button used in interfaces. They come in different variants:
+
+- **Primary**: Use for main actions or CTAs
+- **Secondary**: Use for secondary actions
+- **Tertiary**: Use for tertiary actions or less emphasized options
+- **Tertiary-Hover**: Use to indicate hover state
+
+### Icon Buttons
+
+Buttons can include icons in different positions:
+
+- **Left Icon**: Icon placed on the left side of the text
+- **Right Icon**: Icon placed on the right side of the text
+- **Chevron**: Circular button with a chevron icon
+
+### Button Sizes
+
+Buttons come in three sizes:
+
+- **Small**: Used for compact UIs or secondary actions
+- **Medium**: Default size for most use cases
+- **Large**: Used for prominent actions or when you need extra emphasis
+
+## Color Variations
+
+Each button type is available in four colors:
+
+- **Orange**: Primary brand color
+- **Teal**: Secondary brand color
+- **Charcoal Grey**: Neutral dark color
+- **White**: Neutral light color
+
+## Usage
+
+Import the components you need:
+
+```jsx
+import { Button, IconButton, ChevronButton } from '../components';
+```
+
+### Basic Button
+
+```jsx
+<Button variant="primary">Label</Button>
+```
+
+### Button with Icon
+
+```jsx
+import { ArrowRight } from 'lucide-react';
+
+<Button variant="primary" rightIcon={<ArrowRight size={18} />}>
+  Label
+</Button>
+```
+
+### Chevron Button
+
+```jsx
+<ChevronButton variant="chevron-orange" />
+```
+
+See individual component stories for more detailed usage examples.
