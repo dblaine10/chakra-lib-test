@@ -5,7 +5,11 @@ import theme from './theme';
 import { Button, ChevronButton } from './components';
 
 function App() {
-  const columns = useBreakpointValue({ base: 1, md: 2, lg: 4 });
+  const columns = useBreakpointValue({
+    base: 1,
+    md: 2,
+    lg: 4,
+  }) ?? 1; // Provide a default value of 1 if the breakpoint value is undefined
 
   return (
     <ChakraProvider theme={theme}>
